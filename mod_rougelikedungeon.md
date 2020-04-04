@@ -1,4 +1,4 @@
-- mod_name: rougelikedungeoun
+- mod_name: rougelikedungeon
 - location_type_server: url
 - location_server: https://media.forgecdn.net/files/2492/586/RoguelikeDungeons-1.12.2-1.8.0.jar
 - location_type_client: url
