@@ -9,3 +9,5 @@ Roguelike Dungeons is a mod that generates large underground dungeon structures 
 
 ![alt text](https://media.forgecdn.net/attachments/thumbnails/191/578/310/172/roguelike-tower.png "screeshot1")
 ![alt text](https://media.forgecdn.net/attachments/thumbnails/191/580/310/172/roguelike-tower-eni.png "screeshot2")
+![alt text](https://media.forgecdn.net/attachments/thumbnails/191/579/310/172/roguelike-tower-jungle.png "screeshot3")
+![alt text](https://media.forgecdn.net/attachments/thumbnails/191/584/310/172/roguelike-blacksmith.png "screeshot4")
