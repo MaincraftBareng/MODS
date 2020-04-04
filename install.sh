@@ -30,5 +30,5 @@ do
     cp -rvf $f $MCDIR/config/
   done
 done
-rm -rvf MCDIR/mods/dummy.jar
-rm -rvf MCDIR/config/dummy.txt
+rm -rvf $MCDIR/mods/dummy.jar
+rm -rvf $MCDIR/config/dummy.txt
