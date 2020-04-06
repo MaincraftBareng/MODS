@@ -5,4 +5,4 @@
 - location_client: dummy
 
 description: 
-integration for discord
+integration for discord server
