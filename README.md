@@ -12,7 +12,9 @@ then put the related configs on a folder with the same name of the mod_name in t
 
 ```diff
 ! please make sure you already have minecraft forge before installing these mods,
+````
  minecraft forge can be downloaded at http://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.12.2.html
+```diff
 ! please download the latest and install it on your machine and run it at least once before running install.sh
 ````
 
