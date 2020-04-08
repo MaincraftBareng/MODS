@@ -4,17 +4,26 @@ SIDE=${1:-'client'}
 MCDIR=${2:-'.'}
 echo "installing in $SIDE"
 echo "working in $MCDIR"
+ERRMSG="FATAL ERROR: you don't have folder mods in $MCDIR\n- are $MCDIR is the correct minecraft folder?\n- have you install and run minecraft forge?\n\n"
+[ ! -d $MCDIR/mods ] && printf "$ERRMSG" && return 1
+[ ! -d $MCDIR/config ] && printf "$ERRMSG" && return 1
+printf "\n"
 rm -rvf $MCDIR/config/*
 rm -rvf $MCDIR/mods/*
+printf "\n"
 for f in $FILES
 do
   echo "processing $f ..."
-  MODE="$(cat $f | grep location_type_$SIDE | awk '{printf $3}')"
+  MODE='path'
+  if [ "$SIDE" = 'server' ]
+  then
+    MODE="$(cat $f | grep location_type_$SIDE | awk '{printf $3}')"
+  fi
   LOC="$(cat $f | grep location_$SIDE | awk '{printf $3}')"
   NAME="$(cat $f | grep mod_name: | awk '{printf $3}')"
-  echo "getting $MODE $LOC"
   if [ "$MODE" = 'url' ] 
   then
+    echo "getting $MODE $LOC"
     BASENAME=$(basename $LOC)
     echo "downloading $LOC"
     wget $LOC
@@ -22,13 +31,19 @@ do
   fi
   if [ "$MODE" = 'path' ] 
   then
-    cp $LOC $MCDIR/mods/$NAME.jar
+    if [ "$LOC" != 'dummy' ]
+    then
+      echo "getting $MODE $LOC"
+      cp mods/$LOC $MCDIR/mods/$NAME.jar
+    fi
   fi
-  for f in config/$NAME/*
+  for f2 in config/$NAME/*
   do
-    echo "copying config from $f"
-    cp -rvf $f $MCDIR/config/
+    if [ "$f2" != "config/$NAME/dummy" ]
+    then
+      echo "copying config from $f2"
+      cp -rvf $f2 $MCDIR/config/
+    fi
   done
+  printf "\n"
 done
-rm -rvf $MCDIR/mods/dummy.jar
-rm -rvf $MCDIR/config/dummy.txt

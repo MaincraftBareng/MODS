@@ -1,8 +1,7 @@
 - mod_name: InventoryTweaks-1.63
 - location_type_server: url
 - location_server: https://media.forgecdn.net/files/2482/481/InventoryTweaks-1.63.jar
-- location_type_client: url
-- location_client: https://media.forgecdn.net/files/2482/481/InventoryTweaks-1.63.jar
+- location_client: InventoryTweaks-1.63.jar
 
 description: 
 This client mod allows you to easily manage your inventory, in both single player and multiplayer. It works out of the box, and will make you gain a massive amount of time!
