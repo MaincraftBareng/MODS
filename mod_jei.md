@@ -1,8 +1,7 @@
 - mod_name: jei
 - location_type_server: url
 - location_server: https://media.forgecdn.net/files/2803/400/jei_1.12.2-4.15.0.291.jar
-- location_type_client: url
-- location_client: https://media.forgecdn.net/files/2803/400/jei_1.12.2-4.15.0.291.jar
+- location_client: jei_1.12.2-4.15.0.291.jar
 
 description:
 ---

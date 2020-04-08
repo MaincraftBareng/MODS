@@ -5,9 +5,8 @@ to put new mod please create new md file with name pattern: mod_modname.md
 and value of the file with format:
 - mod_name: the file name of the mod (without the .jar extension)
 - location_type_server: url|path
-- location_server: the url for the mod or relative path in this repo (note that if its url, it must be accessible by simple wget)
-- location_type_client: url|path
-- location_client: the url for the mod or relative path in this repo (note that if its url, it must be accessible by simple wget)
+- location_server: the url for the mod or relative path to mods folder in this repo (note that if its url, it must be accessible by simple wget)
+- location_client: the relative path to mods folder in this repo
 then put the related configs on a folder with the same name of the mod_name in the config folder
 
 ```diff
