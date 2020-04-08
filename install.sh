@@ -4,8 +4,9 @@ SIDE=${1:-'client'}
 MCDIR=${2:-'.'}
 echo "installing in $SIDE"
 echo "working in $MCDIR"
-[ ! -d $MCDIR/mods ] && echo "FATAL ERROR: you don't have folder mods in $MCDIR. have you intall and run minecraft forge?" && return 1
-[ ! -d $MCDIR/config ] && echo "FATAL ERROR: you don't have folder config in $MCDIR. have you intall and run minecraft forge?" && return 1
+ERRMSG="FATAL ERROR: you don't have folder mods in $MCDIR\n- are $MCDIR is the correct minecraft folder?\n- have you install and run minecraft forge?\n\n"
+[ ! -d $MCDIR/mods ] && printf "$ERRMSG" && return 1
+[ ! -d $MCDIR/config ] && printf "$ERRMSG" && return 1
 printf "\n"
 rm -rvf $MCDIR/config/*
 rm -rvf $MCDIR/mods/*

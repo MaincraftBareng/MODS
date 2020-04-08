@@ -9,7 +9,7 @@ and value of the file with format:
 - location_client: the relative path to mods folder in this repo
 then put the related configs on a folder with the same name of the mod_name in the config folder
 
-```diff
+````diff
 ! please make sure you already have minecraft forge before installing these mods,
 ````
  minecraft forge can be downloaded at http://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.12.2.html
@@ -19,6 +19,12 @@ then put the related configs on a folder with the same name of the mod_name in t
 
 to use install.sh in client:
 ```sh
-sh install.sh client yourminecraftpathhere
+sh install.sh client <yourminecraftpathhere>
 ```
+replace yourminecraftpathhere with minecraft installation path (*not minecraft launcher path*)
+on windows its usually on c:\Users\<username>\appData\.minecraft
+on linux its usually on /home/<username>/.minecraft
+
+````diff
 note that this will reset your config and mods folder. Please backup as necessary
+````
