@@ -20,7 +20,7 @@ to use install.sh in client:
 sh install.sh client <yourminecraftpathhere>
 ```
 replace yourminecraftpathhere with minecraft installation path (*not minecraft launcher path*)
-> on windows its usually on c:\Users\<username>\appData\.minecraft
-> on linux its usually on /home/<username>/.minecraft
+> - on windows its usually on c:\Users\<username>\appData\.minecraft
+> - on linux its usually on /home/<username>/.minecraft
 
 > :warning: note that this will reset your config and mods folder. Please backup as necessary
