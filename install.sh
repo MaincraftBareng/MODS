@@ -1,3 +1,9 @@
+
+if [ $# -eq 0 ]; then
+    echo "Usage: install.sh client /path/to/minecraft/installation"
+    exit 1
+fi
+
 git pull
 FILES=mod_*.md
 SIDE=${1:-'client'}
