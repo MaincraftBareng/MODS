@@ -1,8 +1,7 @@
 - mod_name: autofish
 - location_type_server: path
-- location_server: Capsule-1.12.2-3.2.102.jar
-- location_client: Capsule-1.12.2-3.2.102.jar
-
+- location_server: dummy
+- location_client: Auto-Fish-Mod-1.12.2.jar
 description:
 ---
 ---
