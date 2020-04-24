@@ -1,7 +1,7 @@
-- mod_name: drawbridge
+- mod_name: autofish
 - location_type_server: path
-- location_server: draw_bridge-1.12.2-1.2.1.8.jar
-- location_client: draw_bridge-1.12.2-1.2.1.8.jar
+- location_server: dummy
+- location_client: Auto-Fish-Mod-1.12.2.jar
 
 description:
 ---
