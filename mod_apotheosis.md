@@ -5,4 +5,4 @@
 description:
 ---
 ---
-http://www.9minecraft.net/auto-fish-mod/
+https://www.curseforge.com/minecraft/mc-mods/apotheosis

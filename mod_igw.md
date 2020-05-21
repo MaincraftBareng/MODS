@@ -5,4 +5,4 @@
 description:
 ---
 ---
-http://www.9minecraft.net/auto-fish-mod/
+In Game Wiki Mod
